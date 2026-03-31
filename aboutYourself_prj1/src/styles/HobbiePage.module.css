@@ -1,0 +1,65 @@
+.hobbieContainer {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+}
+
+.hobbieContainer section {
+	border-radius: 8px;
+	text-align: right;
+	padding: 1rem;
+	background-color: whitesmoke;
+	background-size: 8rem 8rem;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-color: var(--main-bg);
+
+	@media (max-width: 700px) {
+		background-size: 50% 50%;
+		background-position: bottom left;
+	}
+}
+
+.hobbieContainer section:hover {
+	background-color: rgba(245, 245, 245, 0.432);
+	cursor: pointer;
+}
+
+.hobbieContainer section > h1 {
+	position: relative;
+	z-index: 1;
+}
+
+.Reading {
+	background: url("../assets/reading_book.svg");
+}
+
+.Philosophy {
+	background: url("../assets/philosophy.svg");
+}
+
+.ShareMarket {
+	background: url("../assets/stock.svg");
+}
+
+.Sport {
+	background: url("../assets/sports.svg");
+}
+
+.Movies {
+	background: url("../assets/movie.svg");
+}
+
+@media (max-width: 540px) {
+	.hobbieContainer {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.hobbieContainer section {
+		background-size: 20% 90%;
+		background-position: bottom left;
+	}
+}

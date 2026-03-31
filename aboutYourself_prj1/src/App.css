@@ -1,0 +1,21 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+	--main-bg: rgba(245, 245, 245, 0.336);
+	--hover: rgba(245, 245, 245, 0.596);
+}
+
+.parentWrapper {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.849), gray);
+}
+
