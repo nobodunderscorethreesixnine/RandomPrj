@@ -1,0 +1,72 @@
+.hdrWrapper {
+	background-color: black;
+	color: white;
+}
+
+.topBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.nav {
+	display: flex;
+	gap: 2rem;
+}
+
+.nav > a {
+	text-decoration: none;
+	font-family: "Dosis";
+	font-size: smaller;
+	letter-spacing: 1px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.nav>a:hover{
+  color:rgb(175, 171, 171)
+}
+
+
+.menuBtn {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.desktopNav {
+	display: none;
+}
+
+.mobileNav {
+  display: flex;
+	flex-direction: column;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+	padding: 0 1rem;
+}
+
+.mobileNav.open {
+  border-top:1px solid gray;
+	max-height: 300px;
+  padding: 1rem;
+}
+
+img {
+	width: 100%;
+}
+
+@media (min-width: 830px) {
+	.menuBtn {
+		display: none;
+	}
+	.desktopNav {
+		display: flex;
+	}
+	.mobileNav {
+		display: none;
+	}
+}

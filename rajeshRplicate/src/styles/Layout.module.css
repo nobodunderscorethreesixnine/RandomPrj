@@ -1,0 +1,12 @@
+.padCntrWrapper {
+	max-width: 1200px;
+	width: 100%;
+	padding: 7rem 1.5rem;
+	height: auto;
+	margin: 0 auto;
+}
+
+.padWrapper {
+	padding: 7rem 1.5rem;
+	width: 100%;
+}

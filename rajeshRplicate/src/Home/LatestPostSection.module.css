@@ -1,0 +1,58 @@
+.postTitles {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.title {
+	font-family: "Dosis";
+	text-transform: uppercase;
+	color: black;
+	font-size: 1.3rem;
+	letter-spacing: 3px;
+}
+
+.postWrapper__container {
+	display: flex;
+	gap: 1rem;
+}
+
+.postCard {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.postCard > a > img {
+	width: 100%;
+}
+
+.postCard__title {
+	font-weight: 500;
+}
+
+.postCard__text {
+	color: #555;
+	line-height: 24px;
+}
+
+.postCard__btn {
+	outline: none;
+	border: none;
+	padding: 5px;
+	color: #666;
+	background-color: #cfcfcf;
+	max-width: 130px;
+}
+
+.postCard__btn:hover {
+	color: black;
+}
+
+@media (max-width: 830px) {
+	.postWrapper__container {
+		flex-direction: column;
+	}
+}

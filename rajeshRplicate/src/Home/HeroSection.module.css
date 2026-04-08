@@ -1,0 +1,99 @@
+p,
+h3,
+a {
+	font-family: "Dosis";
+}
+
+.title {
+	margin-bottom: 3rem;
+	font-size: 1.3rem;
+	font-weight: 500;
+	font-family: "Dosis";
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.heroWrapper__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.statsWrapper__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding: 0.8rem 0;
+}
+
+.statsWrapper__nmbr {
+	flex: 1;
+	font-size: 62px;
+	letter-spacing: 12px;
+}
+.statsWrapper__text {
+	flex: 1;
+}
+
+.statsWrapper__text > p {
+	font-size: 14px;
+	font-family: sans-serif;
+	line-height: 24px;
+	color: rgb(78, 76, 76);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.heroWrapper__bio1,
+.heroWrapper__bio2 {
+	line-height: 2rem;
+	font-family: "Dosis";
+}
+
+.heroWrapper__bio2 > span {
+	display: block;
+	padding-top: 0.5rem;
+}
+
+.heroWrapper__btn {
+	text-decoration: none;
+	padding: 10px 36px;
+	color: #666;
+	background-color: #cfcfcf;
+	letter-spacing: 1px;
+}
+
+.heroWrapper__btn:hover {
+	color: black;
+}
+
+@media (max-width: 1000px) {
+	.heroWrapper__container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+	.statsWrapper {
+		grid-column: span 2;
+	}
+	.statsWrapper__text {
+		display: flex;
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 830px) {
+	.heroWrapper__container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.statsWrapper__text {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.statsWrapper {
+		grid-column: auto;
+	}
+}
