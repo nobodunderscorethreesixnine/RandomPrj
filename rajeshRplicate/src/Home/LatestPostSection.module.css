@@ -49,6 +49,7 @@
 
 .postCard__btn:hover {
 	color: black;
+	cursor: pointer;
 }
 
 @media (max-width: 830px) {

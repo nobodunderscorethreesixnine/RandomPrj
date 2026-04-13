@@ -10,6 +10,10 @@
 	padding: 1rem;
 }
 
+.logoTitle {
+	font-family:'cursive', monospace;
+}
+
 .nav {
 	display: flex;
 	gap: 2rem;
@@ -24,10 +28,9 @@
 	text-transform: uppercase;
 }
 
-.nav>a:hover{
-  color:rgb(175, 171, 171)
+.nav > a:hover {
+	color: rgb(175, 171, 171);
 }
-
 
 .menuBtn {
 	background: none;
@@ -41,7 +44,7 @@
 }
 
 .mobileNav {
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	max-height: 0;
 	overflow: hidden;
@@ -50,13 +53,9 @@
 }
 
 .mobileNav.open {
-  border-top:1px solid gray;
+	border-top: 1px solid gray;
 	max-height: 300px;
-  padding: 1rem;
-}
-
-img {
-	width: 100%;
+	padding: 1rem;
 }
 
 @media (min-width: 830px) {

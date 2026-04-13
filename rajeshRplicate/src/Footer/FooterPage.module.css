@@ -42,3 +42,7 @@
 	font-size: small;
 	letter-spacing: 2px;
 }
+
+.iconWrapper>div>a:hover {
+	cursor: pointer;
+}

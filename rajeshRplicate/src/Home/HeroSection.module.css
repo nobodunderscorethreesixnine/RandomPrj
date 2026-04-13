@@ -15,43 +15,35 @@ a {
 
 .heroWrapper__container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
-}
-
-.statsWrapper__container {
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	border-bottom: 1px solid black;
-	padding: 0.8rem 0;
 }
 
-.statsWrapper__nmbr {
-	flex: 1;
-	font-size: 62px;
-	letter-spacing: 12px;
-}
-.statsWrapper__text {
-	flex: 1;
+.bgImg {
+	place-self: center;
 }
 
-.statsWrapper__text > p {
-	font-size: 14px;
-	font-family: sans-serif;
-	line-height: 24px;
-	color: rgb(78, 76, 76);
-	text-transform: uppercase;
-	letter-spacing: 3px;
+.bgImg {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow: 0 4px 12px rgb(158, 157, 157);
+	border: 4px solid #fff;
 }
 
-.heroWrapper__bio1,
-.heroWrapper__bio2 {
+.profileImg {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.heroWrapper__bio1 {
 	line-height: 2rem;
-	font-family: "Dosis";
 }
 
-.heroWrapper__bio2 > span {
+.heroWrapper__bio1 > span {
 	display: block;
 	padding-top: 0.5rem;
 }
@@ -71,29 +63,11 @@ a {
 @media (max-width: 1000px) {
 	.heroWrapper__container {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(1, 1fr);
-	}
-	.statsWrapper {
-		grid-column: span 2;
-	}
-	.statsWrapper__text {
-		display: flex;
-		gap: 1rem;
 	}
 }
 
 @media (max-width: 830px) {
 	.heroWrapper__container {
 		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.statsWrapper__text {
-		display: flex;
-		flex-direction: column;
-		gap: 0;
-	}
-
-	.statsWrapper {
-		grid-column: auto;
 	}
 }

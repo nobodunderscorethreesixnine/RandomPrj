@@ -5,7 +5,7 @@ export default function NewsLetter() {
 	return (
 				<article className={`${styles.newsLetterWrapper__container} ${layout.padWrapper}`}>
 				<h3 className={styles.title}>
-					stay updated with our newsletter
+					stay updated with mine newsletter
 				</h3>
 				<div>
 					<input type="email" placeholder="Enter Email Address" />

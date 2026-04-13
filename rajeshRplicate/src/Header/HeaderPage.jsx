@@ -1,8 +1,6 @@
 // headerPage.jsx
 import { useState } from "react";
-import logo from "../assets/logo.png";
 import styles from "../Header/HeaderPage.module.css";
-import rajeshImg from "../assets/banner.jpg";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 
 export default function Header() {
@@ -20,7 +18,7 @@ export default function Header() {
 		<header className={styles.hdrWrapper}>
 			<div className={styles.topBar}>
 				<a href="/">
-					<img src={logo} alt="rajeshHamal logo" />
+					<h1 className={styles.logoTitle}>Birat Gautam</h1>
 				</a>
 				<button
 					className={styles.menuBtn}
@@ -53,8 +51,6 @@ export default function Header() {
 					</a>
 				))}
 			</nav>
-
-			<img src={rajeshImg} alt="rajesh hamal img" />
 		</header>
 	);
 }
