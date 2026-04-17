@@ -1,4 +1,4 @@
-import styles from "./skillsSection.module.css";
+import styles from "./SkillsSection.module.css";
 import layout from "../styles/Layout.module.css";
 import {
 	FaHtml5,
