@@ -1,12 +1,15 @@
-// HeroSection.jsx
 import styles from "./HeroSection.module.css";
 import layout from "../styles/Layout.module.css";
 import mineImg from "../assets/mine.jpg";
 
+
 export default function HeroSection() {
 	return (
 		<section className={layout.padCntrWrapper}>
-			<h3 className={styles.title}>About me</h3>
+			<h3 className={styles.title}>
+				Namaste <span id={styles.separator}>|</span>
+				<span id={styles.titleName}>ma birat</span>
+			</h3>
 			<article className={styles.heroWrapper__container}>
 				<div className={styles.bgImg}>
 					<img

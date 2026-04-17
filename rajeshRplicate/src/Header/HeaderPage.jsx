@@ -1,4 +1,3 @@
-// headerPage.jsx
 import { useState } from "react";
 import styles from "../Header/HeaderPage.module.css";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
@@ -7,10 +6,8 @@ export default function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const navItems = [
 		"home",
-		"Biography",
+		"Projects",
 		"Blogs",
-		"Movies",
-		"Endorsement",
 		"Contacts",
 	];
 
