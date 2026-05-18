@@ -1,0 +1,129 @@
+.headerWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.493);
+	height: 100vh;
+}
+
+.navLinkWrapper {
+	width: 200px;
+}
+
+.navLinks {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	padding: 0.6rem 0;
+	cursor: pointer;
+	width: fit-content;
+	color: var(--primary-txt-color);
+	font-family: monospace;
+	transition: color 0.2s ease;
+}
+
+.navLinks span {
+	display: inline-block;
+	height: 2px;
+	width: 60px;
+	background-color: whitesmoke;
+	transition: width 0.2s ease-in;
+}
+
+.navLinks:hover,
+.navLinks.active {
+	color: var(--primary-txt-hover-color);
+}
+
+.navLinks:hover span {
+	width: 70px;
+}
+
+.navLinks.active span {
+	width: 80px;
+}
+
+.iconWrapper {
+	width: 200px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.icon {
+	font-size: 1.8rem;
+	color: gray;
+}
+
+.icon:hover {
+	color: var(--icon-hover-color);
+	color: rgb(204, 201, 201);
+}
+
+@media (max-width: 1050px) {
+	.headerWrapper {
+		height: auto;
+		background-color: rgba(0, 0, 0, 0.493);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		backdrop-filter: blur(40px);
+		padding: 2rem;
+	}
+}
+
+/* mobile nav bar */
+.mobileHeaderWrapper {
+	display: none;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+	gap:1.2rem;
+	padding-top: 1rem;
+	background-color: rgba(0, 0, 0, 0.493);
+	backdrop-filter: blur(14px);
+}
+
+.mobileNavLinkWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 0.8rem;
+	padding: 0.6rem 0;
+	width: 100%;
+}
+
+.mobileNavLinks {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	cursor: pointer;
+	width: fit-content;
+	color: var(--primary-txt-color);
+	font-family: monospace;
+	transition: color 0.4s ease border-color 0.4s ease;
+	border-bottom:1px solid transparent;
+}
+
+.mobileNavLinks.active {
+	border-color:whitesmoke;
+	color: var(--primary-txt-hover-color);
+}
+
+@media (max-width: 600px) {
+	.headerWrapper {
+		display: none;
+	}
+	.mobileHeaderWrapper {
+		display:flex;
+	}
+	.mobileNavLinks {
+		display: flex;
+	}
+	.icon {
+		font-size:1.9rem;
+	}
+}

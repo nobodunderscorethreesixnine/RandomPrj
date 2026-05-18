@@ -1,0 +1,136 @@
+.techWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 3rem;
+	background-color: rgba(0, 0, 0, 0.493);
+	min-height: 500px;
+	overflow: hidden;
+}
+
+.techHdr {
+	font-family: monospace;
+	font-size: medium;
+	color: var(--primary-txt-color);
+	transition: color 0.3s ease;
+}
+
+.techWrapper:hover .techHdr {
+	color: var(--primary-txt-hover-color);
+}
+
+.marqueeContainer {
+	overflow: hidden;
+	mask-image: linear-gradient(
+		to right,
+		transparent,
+		black 10%,
+		black 90%,
+		transparent
+	);
+}
+
+.marqueeTrack {
+	display: flex;
+	width: max-content;
+	animation: marquee 28s linear infinite;
+}
+
+.marqueeContainer:hover .marqueeTrack {
+	animation-play-state: paused;
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+.techCard {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: center;
+	width: 150px;
+	border-radius: 8px;
+	color: rgba(255, 255, 255, 0.692);
+	font-family: monospace;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transform: translateY(20px);
+	opacity: 0;
+	transition:
+		opacity 0.5s ease,
+		transform 0.5s ease;
+}
+
+.techCard.reveal .techIcon {
+	animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+	0% {
+		transform: scale(0.8);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.techCard.reveal {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.techIcon {
+	font-size: 2.5rem;
+	transition:
+		color 0.3s ease,
+		transform 0.3s ease;
+}
+
+@media (max-width: 750px) {
+	.techIcon {
+		font-size: 2rem;
+	}
+
+	.techCard {
+		width: 120px;
+		padding: 0;
+	}
+}
+
+.techContainer {
+	display: none;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+@media (max-width: 600px) {
+	.marqueeContainer {
+		display: none;
+	}
+
+	.techContainer {
+		display: grid;
+	}
+	.techCard {
+		width: auto;
+		padding: 0.7rem 0;
+		background-color: rgba(255, 255, 255, 0.11);
+		transition: transform 0.3s ease background-color 0.3s ease;
+	}
+
+	.techCard:active {
+		transform: scale(0.95);
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
