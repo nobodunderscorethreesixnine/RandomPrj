@@ -1,4 +1,4 @@
-import layout from "../Styles/layout.module.css";
+import layout from "../Styles/Layout.module.css";
 import styles from "../Styles/Projects.module.css";
 // images
 import cvBuilderImg from "../Assets/Images/cvBuilderProject.png";
