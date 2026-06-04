@@ -2,6 +2,7 @@
 	text-align: center;
 	color: rgb(163, 161, 161);
 	font-family: monospace;
-	background-color:rgba(0, 0, 0, 0.493);
+	/* background-color:rgba(0, 0, 0, 0.493); */
+	background-color:var(--section-bg);
 	padding: 2rem;
 }

@@ -1,0 +1,27 @@
+.errorWrapper {
+	background-color:var(--section-bg);
+  min-height:90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:3rem;
+  font-family: monospace;
+}
+
+.errorWrapper h1 {
+  font-size:2 rem;
+  color: var(--muted-txt);
+}
+
+.errorWrapper .link {
+  text-decoration: none;
+  color:var(--accent-color);
+  border-bottom:1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+  font-size:large;
+}
+
+.errorWrapper .link:hover {
+  border-bottom-color: var(--accent-hover-color);
+}

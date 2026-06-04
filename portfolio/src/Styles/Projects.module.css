@@ -3,7 +3,8 @@
 	flex-direction: column;
 	justify-content: space-around;
 	gap: 3rem;
-	background-color: rgba(0, 0, 0, 0.493);
+	/* background-color: rgba(0, 0, 0, 0.493); */
+	background-color:var(--section-bg);
 	min-height: 500px;
 	font-family: monospace;
 }
@@ -115,7 +116,8 @@
 .timelineTitle {
 	font-size: 1.2rem;
 	font-weight: bold;
-	color: gold;
+	/* color: gold; */
+	color: var(--accent-color)
 }
 
 .timelineTech {
@@ -131,7 +133,8 @@
 
 .timelineBtn {
 	text-decoration: none;
-	color: gold;
+	/* color: gold; */
+	color: var(--accent-color);
 	border-bottom: 1px solid transparent;
 	transition: border-bottom-color 0.3s ease;
 }
