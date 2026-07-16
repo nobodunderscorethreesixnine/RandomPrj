@@ -16,7 +16,7 @@ export default function App() {
   const [isConnection, setIsConnection] = useState(false);
 
   return (
-    <section className="relative flex min-h-screen flex-col overflow-hidden border border-red-500 bg-no-repeat">
+    <section className="relative flex min-h-screen flex-col overflow-hidden bg-no-repeat">
       <Toaster position="top-right" />
       <div className="pointer-events-none absolute -right-10 -bottom-10 -z-10 h-60 w-60 rotate-230 bg-[url('../src/assets/images/circuitPattern.webp')] bg-cover bg-no-repeat opacity-10 md:h-80 md:w-80"></div>
       <div className="pointer-events-none absolute -top-10 -left-10 -z-10 h-60 w-60 rotate-50 bg-[url('../src/assets/images/circuitPattern.webp')] bg-cover bg-no-repeat opacity-10 md:h-80 md:w-80"></div>

@@ -164,7 +164,7 @@ export default function BotInterface({
     /* <main className="flex flex-1 flex-col items-center gap-2 border p-4"> */
   }
   return (
-    <main className="my-8 flex flex-1 flex-col items-center gap-2 border p-4">
+    <main className="my-8 flex flex-1 flex-col items-center gap-2 p-4">
       <section
         className="relative flex h-[600px] w-full max-w-[350px] flex-col gap-4 overflow-y-scroll border-r-6 border-b-6 p-2"
         // className="flex h-[600px] w-full max-w-[350px] flex-col gap-4 overflow-y-scroll border border-3 border-r-6 border-b-6 p-2"
