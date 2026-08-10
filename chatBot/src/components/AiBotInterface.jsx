@@ -10,7 +10,7 @@ function getFormattedTime() {
   });
 }
 
-export default function BotInterface({
+export default function AiBotInterface({
   setIsModeAi,
   isConnection,
   setIsConnection,
@@ -39,8 +39,6 @@ export default function BotInterface({
           type: "disconnect",
         }),
       );
-      //TODO: i haven't pass prop setIsBotClick here but below i am using it i think that is causing problem, solve this and cleanup code
-      //and move on plan on learning backend + doing additional frontend project for displaying in portfolio start with designing nepse.
       ws.current.close();
       setIsBotClick(false);
       setIsModeAi(false);
@@ -111,7 +109,7 @@ export default function BotInterface({
     });
 
     ws.current.addEventListener("open", () => {
-      ws.current.send(JSON.stringify({ type: "init", mode: "Bot" }));
+      ws.current.send(JSON.stringify({ type: "init", mode: "Ai" }));
       console.log("connected");
       setIsConnection(true);
       toast("Connected successfully", {
@@ -124,7 +122,7 @@ export default function BotInterface({
           fontWeight: "bold",
           textTransform: "uppercase",
           letterSpacing: "0.05em",
-          borderRadius: "0px",
+          borderRadius: "opx",
           backgroundColor: "#7FBC8C",
           fontSize: "1.1rem",
         },
@@ -149,15 +147,12 @@ export default function BotInterface({
   }, []);
 
   return (
-    <>
-      {/* <Icon icon=/> */}
-      <ChatInterface
-        onSend={sendMsg}
-        onChange={setUserInput}
-        value={userInput}
-        messages={messages}
-        isTyping={isBotTyping}
-      />
-    </>
+    <ChatInterface
+      onSend={sendMsg}
+      onChange={setUserInput}
+      value={userInput}
+      messages={messages}
+      isTyping={isBotTyping}
+    />
   );
 }

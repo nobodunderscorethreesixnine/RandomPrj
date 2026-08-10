@@ -10,7 +10,6 @@ export default function AnimatedRebot({ setIsBotClick }) {
       className="cursor-pointer"
 
       // 1. The Click Effect! (Shrinks to 90% size when pressed)
-      // whileTap={{ scale: 0.9 }}
       onClick={() => setIsBotClick(true)}
 
       // 2. The Notification Shake!

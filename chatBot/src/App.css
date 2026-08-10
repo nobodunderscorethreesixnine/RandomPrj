@@ -13,7 +13,7 @@
 @layer base {
   body {
     font-family: var(--font-custom);
-    /* background-color:#Daf5f0; */
-    background-color: #FFDB58;
+    /* background-color: #daf5f0; */
+    background-color: #ffdb58;
   }
 }
